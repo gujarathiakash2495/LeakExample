@@ -23,9 +23,15 @@ class CounterFragment: Fragment() {
 
             firstMethod("First method")
             secondMethod("Second method")
+            methodSixth("Method sixed")
+            methodSeventh("Method seventh2")
 
             handler.postDelayed(this, 1000)
         }
+    }
+
+    private fun methodSixth(text: String) {
+        Log.d("####", "SixthMethod")
     }
 
     private fun firstMethod(text: String) {
@@ -34,6 +40,10 @@ class CounterFragment: Fragment() {
 
     private fun secondMethod(text: String) {
         Log.d("######", "Call second method")
+    }
+
+    private fun methodSeventh(text: String) {
+        Log.d("####", "SixthMethod")
     }
 
     override fun onCreateView(
