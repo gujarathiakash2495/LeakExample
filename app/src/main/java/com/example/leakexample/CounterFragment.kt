@@ -21,8 +21,14 @@ class CounterFragment: Fragment() {
             currentCounterValue+=1
             counterTextView.setText(currentCounterValue.toString())
 
+            firstMethod("First method")
+
             handler.postDelayed(this, 1000)
         }
+    }
+
+    private fun firstMethod(text: String) {
+        Log.d("######", "Call first method")
     }
 
     override fun onCreateView(
