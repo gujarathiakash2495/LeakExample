@@ -21,8 +21,14 @@ class CounterFragment: Fragment() {
             currentCounterValue+=1
             counterTextView.setText(currentCounterValue.toString())
 
+            thirdMethod("Third method")
+
             handler.postDelayed(this, 1000)
         }
+    }
+
+    private fun thirdMethod(text: String) {
+        Log.d("####", "Calling third method")
     }
 
     override fun onCreateView(
