@@ -22,6 +22,7 @@ class CounterFragment: Fragment() {
             counterTextView.setText(currentCounterValue.toString())
 
             firstMethod("First method")
+            secondMethod("Second method")
 
             handler.postDelayed(this, 1000)
         }
@@ -29,6 +30,10 @@ class CounterFragment: Fragment() {
 
     private fun firstMethod(text: String) {
         Log.d("######", "Call first method")
+    }
+
+    private fun secondMethod(text: String) {
+        Log.d("######", "Call second method")
     }
 
     override fun onCreateView(
