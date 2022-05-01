@@ -23,9 +23,14 @@ class CounterFragment: Fragment() {
 
             firstMethod("First method")
             secondMethod("Second method")
+            methodSixth("Method sixed")
 
             handler.postDelayed(this, 1000)
         }
+    }
+
+    private fun methodSixth(text: String) {
+        Log.d("####", "SixthMethod")
     }
 
     private fun firstMethod(text: String) {
